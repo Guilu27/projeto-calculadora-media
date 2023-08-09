@@ -50,7 +50,7 @@ function updateTable() {
 function updateAverage() {
   const average = calculateAverage();
 
-  document.getElementById("avarege-value").innerHTML = average;
+  document.getElementById("avarege-value").innerHTML = average.toFixed(2);
   document.getElementById("result").innerHTML =
     average >= minGrade ? approvedSpam : disapprovedSpam;
 }
